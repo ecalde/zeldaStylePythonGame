@@ -1,4 +1,5 @@
-import pygame 
+# The level file is the core component of the game. It contains the sprites(player, enemies, map) and also deals with their interactions
+import pygame
 from settings import *
 from tile import Tile
 from player import Player
