@@ -15,7 +15,7 @@ class Game:
 		pygame.display.set_caption('Zelda')						# Sets the name of the game window
 		self.clock = pygame.time.Clock()						# 1 creating a clock
 
-		self.level = Level()
+		self.level = Level()									# create instance of level class in main
 	
 	def run(self):												# 1 define the run method
 		while True:												# 1 loop to run the game while true
@@ -25,7 +25,7 @@ class Game:
 					sys.exit()
 
 			self.screen.fill('black')							# 1 fill the screen with a solid color
-			self.level.run()
+			self.level.run()									# call run method from Level class to display/draw visible sprites
 			pygame.display.update()								# 1 updating the screen
 			self.clock.tick(FPS)								# 1 controlling the FPS. clock.tick = update the clock
 

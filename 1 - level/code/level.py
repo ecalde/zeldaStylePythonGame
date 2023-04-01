@@ -1,4 +1,5 @@
 # The level file is the core component of the game. It contains the sprites(player, enemies, map) and also deals with their interactions
+# Manages hundreds of sprites effectively via groups to give different functionality to each sprite group
 import pygame
 from settings import *
 from tile import Tile
@@ -6,14 +7,15 @@ from player import Player
 
 
 class Level:
+	# 1 __init__ method is declared within a class to initialize the attributes of an object as soon as the object is formed
 	def __init__(self):
 
 		# get the display surface 
-		self.display_surface = pygame.display.get_surface()
+		self.display_surface = pygame.display.get_surface()						# Get a reference to the currently set display surface
 
 		# sprite group setup
-		self.visible_sprites = pygame.sprite.Group()
-		self.obstacle_sprites = pygame.sprite.Group()
+		self.visible_sprites = pygame.sprite.Group()							# 1 create the visible sprite group
+		self.obstacle_sprites = pygame.sprite.Group()							# 1 create the obstacle sprite group
 
 		# sprite setup
 		self.create_map()
@@ -28,6 +30,6 @@ class Level:
 				if col == 'p':
 					Player((x,y),[self.visible_sprites])
 
-	def run(self):
+	def run(self):																# 1 define the run game to draw the sprites
 		# update and draw the game
 		self.visible_sprites.draw(self.display_surface)
