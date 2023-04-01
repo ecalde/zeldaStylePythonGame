@@ -1,4 +1,4 @@
-# 1 game setup (main game variables)
+# 1 game setup (main game variables).
 WIDTH    = 1280	        # width of game window
 HEIGTH   = 720          # height of game window
 FPS      = 60           # fps of game

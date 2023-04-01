@@ -1,9 +1,9 @@
 # 1 pygame is a cross-platform set of Python modules designed for writing video games.
-# 1 sys module provides functions and variables which are used to manipulate different parts of the Python Runtime Environment
+# 1 sys module provides functions and variables which are used to manipulate different parts of the Python Runtime Environment.
 import pygame, sys
-from settings import *											# importing everything from settings
-from level import Level											# importing level from level
-# from debug import debug 										# import debug to view debug. You can add "debug('hello')" to debug at specific parts
+from settings import *											# 1 importing everything from settings
+from level import Level											# 1 importing level from level
+# from debug import debug 										# 1 import debug to view debug. You can add "debug('hello')" to debug at specific parts
 
 class Game:
 	# 1 __init__ method is declared within a class to initialize the attributes of an object as soon as the object is formed

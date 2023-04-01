@@ -1,5 +1,5 @@
-# 1 This file does not influence the game at all. It simply debugs the game
-# 1 It's meant to show what is happening in the game
+# 1 This file does not influence the game at all. It simply debugs the game.
+# 1 It's meant to show what is happening in the game.
 import pygame
 pygame.init()
 font = pygame.font.Font(None,30)
