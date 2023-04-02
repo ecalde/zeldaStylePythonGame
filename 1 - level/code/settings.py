@@ -4,7 +4,7 @@ HEIGTH   = 720          # height of game window
 FPS      = 60           # fps of game
 TILESIZE = 64           # size of tile of game
 
-WORLD_MAP = [
+WORLD_MAP = [                                                                               # this is basically a list, with nested lists
 ['x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x'],
 ['x',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','x'],
 ['x',' ','p',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','x'],          # 'p' represents the player and 'x' is an obstacle
